@@ -1,4 +1,4 @@
-### SYNCHRONOUS-UP-COUNTER
+<img width="1920" height="741" alt="{E30D3A46-355E-470E-9D25-8834C01D2340}" src="https://github.com/user-attachments/assets/78613774-aa39-4f1b-b644-5d9e6b29d3cd" />### SYNCHRONOUS-UP-COUNTER
 
 **AIM:**
 
@@ -33,14 +33,29 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 **PROGRAM**
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
-
-Developed by: RegisterNumber:
+```
+module ex5(clk,rst,count);
+input clk,rst;
+output reg[3:0]count;
+always@(posedge clk or negedge rst)
+begin
+if(!rst)
+count <= 4'b0000;
+else
+count <= count+1;
+end
+endmodule
+```
+Developed by:jayendhiran.A RegisterNumber:25017257
 */
 
 **RTL LOGIC UP COUNTER**
+<img width="806" height="392" alt="Screenshot 2025-12-18 190303" src="https://github.com/user-attachments/assets/21a3a91d-8b51-4ce9-bfb7-9cc60ff2dd20" />
+
 
 **TIMING DIAGRAM FOR IP COUNTER**
 
-**TRUTH TABLE**
+<img width="1920" height="741" alt="Screenshot 2025-12-18 190514" src="https://github.com/user-attachments/assets/e1423cf0-c2ac-4021-aa4d-b81ab36fd670" />
 
 **RESULTS**
+Thus the program is successfully executed using quatras prime software. 
